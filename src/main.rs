@@ -3,10 +3,13 @@ use std::io;
 //incluindo amadeu.rs
 mod amadeu;
 
+mod lucas;
+
 fn main() {
     loop {
         println!("Escolha o teste a executar");
         println!("1 - Testes do Amadeu");
+        println!("2 - Testes do Lucas");
         println!("0 - Sair");
         println!("Opcao: ");
 
@@ -21,6 +24,7 @@ fn main() {
         match opcao {
             //Testes do Amadeu
             1 => amadeu::entry_point(),
+            2 => lucas::entry_point(),
             0 => {
                 println!("Encerrando...");
                 break;
