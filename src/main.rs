@@ -20,6 +20,7 @@ fn main() {
             .read_line(&mut opcao)
             .expect("Falha ao ler entrada.");
         
+        //let opcao: u8 = opcao.trim().parse().expect("Por favor, digite um numero!");
         let opcao: u8 = opcao.trim().parse().expect("Por favor, digite um numero!");
         match opcao {
             //Testes do Amadeu
